@@ -1,0 +1,314 @@
+/* Catamaran font */
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
+/* Source Code Pro font*/
+@import url (https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+h1 {
+  color: #C51162;
+}
+.pgtitle{
+  padding-top: 198px;
+  color: #FFFFFF;
+  padding-bottom: 100px;
+}
+.info{
+  font-size:48px;
+  color:#000000;
+  padding-top:15px;
+  padding-bottom:15px
+}
+h2 {
+  color: #000000;
+}
+.aboutItem{
+  font-size:2.0rem;
+}
+p {
+  color:#000000;
+font-size:20px;
+}
+h3 {
+  color: #8A1E4F;
+}
+
+::selection {
+  background: #3D5AFE;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background: #3D5AFE;
+  color: #FFFFFF;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.page {
+	min-height: 100%;
+	position: relative;
+}
+.images {
+	height:130px;
+	width:130px;
+}
+
+header {
+
+}
+
+main {
+	padding-bottom:100px;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+}
+
+/* No selection nor dragging */
+.noseldrag {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+.text_over_image {
+    position: absolute;
+ margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+   height:100px;
+}
+/* Username */
+user {
+  color: #673AB7;
+  font-weight: 700;
+}
+
+a:hover > small.text-muted,
+small.text-muted > a:hover {
+  text-decoration: underline;
+}
+
+/* Editorial title closer to author */
+.editorial-title > h1 {
+  margin-bottom: 0;
+}
+
+.editorial-title > hr {
+  margin-top: 0;
+}
+
+.editorial-title > user::before {
+  content: " ";
+}
+
+/* Bigger list font sizing */
+.large-list {
+  font-size: 1.2em;
+}
+
+.large-list > li {
+  padding-left: 0.2em;
+}
+
+/* Temporary fix to button */
+.btn-block {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Header links */
+a:hover > h2 {
+  color: #cc2972;
+}
+
+/* No Mathjax blue outline */
+:focus {
+  outline: none;
+}
+/*  Font size for new header */
+h2.surveyText {
+	font-size:28px;
+	padding:0px;
+	margin:0px;
+}
+/* Thin font for paragraphs */
+p.thin {
+	color:#000000;
+	font-size:14px;
+	padding:0px;
+	margin:0px;
+	left:25%;
+}
+.readMore {
+	background-color:#ffffff;
+	height:40px;
+	width:120px;
+	border:3px solid black;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    	transition-duration: 0.4s;
+    	cursor: pointer;
+}
+.readMore:hover {
+	background-color:#000000;
+	color:white;
+}
+/* Dimensions for news images */
+.newsImg {
+	height:200px;
+	width:300px;
+}
+/* Check */
+p.newsText {
+	color:#000000;
+	font-size:14px;
+	padding-bottom:30px;
+	margin:0px;
+	left:25%;
+}
+/* Padding for Tables */
+td.pad {
+	padding:15px;
+}
+table {
+
+    vertical-align: center;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+    vertical-align: center;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-button:hover {
+  background: #9fa8da;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #71b4c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71b4c7;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #2d484f;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #c6e1e8;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
