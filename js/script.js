@@ -1,9 +1,11 @@
 $(document).ready(function() {
-    $(".readMore").click(function(){
-        $(".newsText").slideUp();
+    $(".cOverlay").click(function(e){
+     if (e.target !== this)
+    		return;
+        $(".cOverlay").slideUp();
     });
-        $(".readMore").click(function(){
-        $(".newsText").slideDown();
+        $(".contact-us").click(function(){
+        $(".cOverlay").slideDown();
     });   
 
 });
